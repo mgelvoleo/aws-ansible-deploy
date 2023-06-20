@@ -1,19 +1,32 @@
 # How to deploy EC2 instances using Ansible
 
-## Step 1
-Install Ansible, Pip, Boto3 module
+## Step 1 Install ansible, PIP, Boto module
 
-Make IAM role and attach in controller instances
+* Install Ansible, Pip, and Boto3 module on your system.
 
-Create an inventory file and directory
+## Step 2 Make IAM role and attach in controller instances
+
+* Create an IAM role and attach it to the controller instances you will be using.
+
+### Step 3 Create an inventory file and directory
+
+* Open a terminal and execute the following commands:
+
 ```sudo mkdir /etc/ansible```
 
 ```sudo vi /etc/ansible/hosts```
 
+* This will create the directory /etc/ansible and open the hosts file using the vi text editor.
 
-Add the below two lines in the end of the file:
+### Step 4: Add the Following Two Lines at the End of the hosts File
 [localhost]
 local
+
+* Add the above lines to the end of the hosts file and save the changes.
+
+### Step 5 create playbooks folder and go inside
+
+* Execute the following commands:
 
 ```
 cd ~
@@ -21,8 +34,14 @@ mkdir playbooks
 cd playbooks
 ```
 
-Create Ansible playbook
+* This will create a folder named playbooks in your home directory and navigate inside it.
+
+### Step 6: Create the Ansible Playbook named create_ec2.yml
+
+* Execute the following command to create the playbook:
 ```sudo vi create_ec2.yml ```
+
+* Copy and paste the following content into the create_ec2.yml file:yaml
 
 ```
 ---
@@ -90,7 +109,11 @@ Create Ansible playbook
 
 ```
 
+* Save the file after pasting the content.
 
 
-now execute the ansible playbook by
+
+
+
+### Step 7 now execute the ansible playbook by
 ```ansible-playbook create_ec2.yml```
