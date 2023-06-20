@@ -19,8 +19,11 @@
 * This will create the directory /etc/ansible and open the hosts file using the vi text editor.
 
 ### Step 4: Add the Following Two Lines at the End of the hosts File
+```
 [localhost]
 local
+
+```
 
 * Add the above lines to the end of the hosts file and save the changes.
 
