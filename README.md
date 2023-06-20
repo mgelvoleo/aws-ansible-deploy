@@ -103,7 +103,7 @@ cd playbooks
       register: ec2
 
     - name: Task # 3 Add Tagging to EC2 instance
-      local_action: ec2_tag resource={{ item.id }} region={{ region }} stat>
+      local_action: ec2_tag resource={{ item.id }} region={{ region }} state=present
       with_items: "{{ ec2.instances }}"
       args:
         tags:
