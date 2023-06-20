@@ -1,1 +1,1 @@
-# aws-ansible-deploy
+# How to deploy EC2 instances using Ansible
