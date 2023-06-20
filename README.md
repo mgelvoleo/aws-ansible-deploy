@@ -7,6 +7,8 @@
 ## Step 2 Make IAM role and attach in controller instances
 
 * Create an IAM role and attach it to the controller instances you will be using.
+  ![image](https://github.com/mgelvoleo/aws-ansible-deploy/assets/21300768/3c064f55-75f6-46b4-ac3a-1fbd638f8c06)
+
 
 ### Step 3 Create an inventory file and directory
 
