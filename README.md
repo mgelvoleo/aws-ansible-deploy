@@ -2,7 +2,24 @@
 
 ## Step 1 Install ansible, PIP, Boto module
 
-* Install Ansible, Pip, and Boto3 module on your system.
+ ```sudo apt-get update```
+* Install Ansible:
+```sudo apt-get install -y ansible```
+
+* now install the pip
+```sudo apt install python3-pip -y```
+
+* Install boto module
+
+```sudo pip3 install boto boto3```
+
+* Ansible will access AWS resources using boto SDK.
+
+```sudo apt-get install python3-boto -y```
+
+* check the the install module from pip
+
+```pip list boto | grep boto```
 
 ## Step 2 Make IAM role and attach in controller instances
 
